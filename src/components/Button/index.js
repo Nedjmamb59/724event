@@ -64,6 +64,6 @@ Button.defaultProps = {
   type: BUTTON_TYPES.DEFAULT,
   title: "",
   children: null
-}
+}; /* rajout du point virgule*/
 
 export default Button;

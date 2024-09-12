@@ -88,7 +88,7 @@ Select.propTypes = {
   titleEmpty: PropTypes.bool,
   label: PropTypes.string,
   type: PropTypes.string,
-}
+}; /*rajout point virgule*/
 
 Select.defaultProps = {
   onChange: () => null,
@@ -96,6 +96,6 @@ Select.defaultProps = {
   label: "",
   type: "normal",
   name: "select",
-}
+}; /*rajout point virgule*/
 
 export default Select;
