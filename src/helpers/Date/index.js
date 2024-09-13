@@ -1,16 +1,18 @@
 export const MONTHS = {
-  1: "janvier",
-  2: "février",
-  3: "mars",
-  4: "avril",
-  5: "mai",
-  6: "juin",
-  7: "juillet",
-  8: "août",
-  9: "septembre",
-  10: "octobre",
-  11: "novembre",
-  12: "décembre",
+  0: "janvier", // Les mois commencent à 0 en JavaScript, donc on aligne l'indexation ici.
+  1: "février",
+  2: "mars",
+  3: "avril",
+  4: "mai",
+  5: "juin",
+  6: "juillet",
+  7: "août",
+  8: "septembre",
+  9: "octobre",
+  10: "novembre",
+  11: "décembre",
 };
 
 export const getMonth = (date) => MONTHS[date.getMonth()];
+// getMonth() renvoie un nombre de 0 à 11, donc l'index du tableau MONTHS doit aussi commencer à 0.
+// Alternative : Si les mois sont indexés de 1 à 12, il faut utiliser `MONTHS[date.getMonth() + 1]`.
